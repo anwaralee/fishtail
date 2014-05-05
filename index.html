@@ -1,0 +1,357 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/accordion.js"></script>
+<script>
+     $(document).ready(function(){
+        $('.dropdown-toggle').dropdown()
+    });
+</script>
+<script type="text/javascript">
+
+
+ddaccordion.init({
+	headerclass: "expandable", //Shared CSS class name of headers group that are expandable
+	contentclass: "categoryitems", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fish Tail</title>
+<link href="css/dashboard.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+<h1 class="leftblock"> Welcome Administrator,
+      <a href="login.html">Logout</a>
+    </h1>
+    <div class="rightblock">
+  <ul class="nav" class="parent">
+  <li class="dropdown parent">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span>
+        </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </li>
+  <li class="parent"><a href="#">Menu 1</a></li>
+  <li class="parent"><a href="#">Menu 2</a></li>
+  <li class="parent"><a href="#">Menu 1</a></li>
+  <li class="parent"><a href="#">Menu 2</a></li>
+  
+
+</ul>
+
+    	
+    </div>
+    <div class="clear"></div>
+</div>
+<!--header-->
+
+
+  <div class="admin_wrapper">
+    <div class="options floatLeft">
+<div class="logo"><a href="#"><img src="img/logo.png" alt="" /></a></div>
+  <div class="sidemenu arrowlistmenu">
+  
+    <h3 class="menuheader expandable openheader first" headerindex="0h"><i class="icon-th"></i> More options</h3>
+        <ul class="categoryitems" contentindex="0c" style="">
+        	<li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+    
+    <h3 class="menuheader expandable openheader" headerindex="1h"><i class="icon-user"></i> More options</h3>
+        <ul class="categoryitems" contentindex="1c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+        
+    <h3 class="menuheader expandable openheader" headerindex="2h"><i class="icon-book"></i> More options</h3>
+        <ul class="categoryitems" contentindex="2c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+        
+    <h3 class="menuheader expandable openheader" headerindex="3h"><i class="icon-list-alt"></i> More options</h3>
+        <ul class="categoryitems" contentindex="3c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+        
+        
+     <h3 class="menuheader expandable openheader" headerindex="4h"><i class="icon-user"></i> More options</h3>
+        <ul class="categoryitems" contentindex="4c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+        
+      <h3 class="menuheader expandable openheader" headerindex="5h"><i class="icon-th"></i> More options</h3>
+        <ul class="categoryitems" contentindex="5c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+      
+      <h3 class="menuheader expandable openheader" headerindex="6h"><i class="icon-book"></i> More options</h3>
+        <ul class="categoryitems" contentindex="6c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul> 
+      
+      <h3 class="menuheader expandable openheader" headerindex="7h"><i class="icon-book"></i> More options</h3>
+        <ul class="categoryitems" contentindex="7c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+      
+      <h3 class="menuheader expandable openheader" headerindex="8h"><i class="icon-book"></i> More options</h3>
+        <ul class="categoryitems" contentindex="8c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>
+      
+      <h3 class="menuheader expandable openheader" headerindex="9h"><i class="icon-book"></i> More options</h3>
+        <ul class="categoryitems" contentindex="9c" style="">
+        <li class=""><a href="#" class="first" ><i class="icon-arrow-right"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-arrow-right"></i> Sidebar Menu 7</a></li>
+        </ul>                    
+    <!--
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li><li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a href="#"><i class="icon-user"></i> More options</a>
+        <ul class="dropdown-menu" style="width: 200px!important;">
+        <li class=""><a href="#" class="first" ><i class="icon-user"></i> Sidebar Menu 5</a></li>
+            <li class=""><a href="#" ><i class="icon-list-alt"></i> Sidebar Menu 6</a></li>
+            <li class=""><a href="#" ><i class="icon-book"></i> Sidebar Menu 7</a></li>
+        </ul>
+    </li>
+    -->
+  </div>
+</div>
+
+<!--options-->    <div class="option_content floatLeft">
+    <h2>Admin Dashboard</h2><div class='seperator'></div>
+    <p>
+	Welcome Admin</p>
+        <div class="sample-listing">
+            <table class="table table-bordered table-striped">
+                <tr>    
+                    <th colspan="5"><center>Sample Listing</center></th>
+                </tr>
+                <tr>
+                    <th>S/N</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Email</th>
+                    <th class="action">Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sample Title</td>
+                    <td>sample description goes here</td>
+                    <td>sample@email.com</td>
+                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
+ <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
+                </tr>
+            </table>
+                <div class="pagination">
+                <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">Next</a></li>
+                </ul>
+                </div>
+        </div>
+    </div><!--option_content-->
+      <div class="clear"></div>
+  </div>
+
+  </div><!--wrapper-->
+
+<div class="footer">
+Yeti Airlines - Copyright © 2013</div>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* CSS Document */
+body{margin:0;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.navbar{background:#269176;color:#FFF;position:fixed;top:0;width:100%;padding:5px 10px;}
+.navbar a{color:#FFF;font-weight:bold;}
+.navbar h1{margin:0 0 0 100px;;font-size:14px;}
+.setting{padding-right:20px;}
+.navigation{margin:0 0 0 100px;width:1065px;}
+.navbar-nav a{color:#FFF!important;text-shadow:none!important;}
+.dropdown{background:#06914F;border-right:1px solid #0C6;}
+.navbar-nav li:hover,.navbar-nav .active{background-color: #FFFFFF!important;}
+.active a{color:#555!important;}
+.navbar-nav a:hover{color:#555!important;}
+.content{min-height:312px;padding-top:235px;}
+.footer{background:#269176;color:#FFF;padding: 5px;
+    text-align: center;}
+	.dropdown-menu a{color:#777!important;}
