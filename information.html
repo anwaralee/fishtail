@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
 <script>
      $(document).ready(function(){
-        $('.dropdown-toggle').dropdown()
+        $('.dropdown-toggle').dropdown();
+		$('.datepicker').datepicker();
     });
 </script>
 <script type="text/javascript">
@@ -220,131 +221,50 @@ ddaccordion.init({
 </div>
 
 <!--options-->    <div class="option_content floatLeft">
-    <h2>Admin Dashboard</h2><div class='seperator'></div>
-    <p>
-	Welcome Admin</p>
-        <div class="sample-listing">
-            <table class="table table-bordered table-striped">
-                <tr>    
-                    <th colspan="5"><center>Sample Listing</center></th>
-                </tr>
-                <tr>
-                    <th>S/N</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Email</th>
-                    <th class="action">Action</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Sample Title</td>
-                    <td>sample description goes here</td>
-                    <td>sample@email.com</td>
-                    <td class="center"><a href="#" class="btn btn-success tblbtn">Edit</a> &nbsp; &nbsp; 
- <a href="#" class="btn btn-danger tblbtn">Delete</a></td>
-                </tr>
-            </table>
-                <div class="pagination">
-                <ul>
-                <li><a href="#">Prev</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">Next</a></li>
-                </ul>
-                </div>
-        </div>
-    </div><!--option_content-->
+						<h2 class="maintitle">Agent Form</h2>
+						<div class="seperator"></div>
+    					
+                        	<div class="formlist">
+                            <h3 class="title">Company Information</h3>
+                            <table class="table table-bordered">
+                            	
+                            	<tr><td><strong>Agent Code</strong></td><td>CDE001</td><td></td><td></td><td></td><td></td></tr>                    
+                                <tr>
+                                	<td><strong>Registration Number</strong></td><td>00</td><td><strong>PAN Number</strong></td><td>44499</td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                	<td><strong>Company Name</strong></td><td>Fishtail</td><td></td><td></td><td><strong>Type</strong></td><td>Option1</td>
+                                </tr>
+                                <tr><td><strong>Date of Estb.</strong></td><td>2010/11/1</td><td><strong>Date of Contact</strong></td><td>2010/11/1</td><td></td><td></td>
+                                </tr>
+                                <tr><td><strong>Territory</strong></td><td>Kathmandu</td><td><strong>Segment</strong></td><td>Segment1</td><td><strong>Agent Category</strong></td><td>Category1</td></tr>
+                                <tr>
+                                	<td><strong>Credit Term Day</strong></td><td>0</td><td><strong>Credit Limit</strong></td><td>0.00</td><td><strong>Business Volume</strong></td><td>00</td>
+                                </tr>
+                                <tr>
+                                	<td><strong>Comment</strong></td><td colspan="5">Meet agents on the following day .</td>
+                                </tr>
+                                
+                            </table>
+                            </div>
+                            <div class="seperator"></div>
+                            <div class="formlist">
+                            	<h3 class="title">Head Office Information</h3>
+                                <table class="table table-bordered">
+                                <tr><td><strong>Adress 1</strong></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td><strong>Adress 2</strong></td><td></td><td></td><td></td><td></td><td></td></tr>
+                                <tr><td><strong>City</strong></td><td>Raipur</td><td>District</td><td>Raipur</td><td>State</td><td>CHHATISH GADH</td></tr>
+                                <tr><td><strong>Pin Number</strong></td><td>010223</td><td><strong>Postal Code</strong></td><td>332</td><td><strong>Country</strong></td><td>India</td></tr>
+                                <tr><td><strong>Email 1</strong></td><td>@gmail.com</td><td><strong>Email 2</strong></td><td>@gmail.com</td><td></td><td></td></tr>
+                                <tr><td><strong>Phone 1</strong></td><td>9841299031</td><td><strong>Phone 2</strong></td><td>9841299031</td><td><strong>Phone 3</strong></td><td>9841299031</td></tr>
+                                <tr><td><strong>Fax</strong></td><td>0123465</td><td><strong>Website</strong></td><td>www.fishtail.com</td><td></td><td></td></tr>
+                                </table>
+                                
+                            
+                            </div>
+                          
+                        
+    			  </div><!--option_content-->
       <div class="clear"></div>
   </div>
 
